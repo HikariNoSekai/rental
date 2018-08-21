@@ -1,0 +1,9 @@
+extends ../template.pug
+block link
+	-var selected = 'Home';
+block title
+	| Rental car
+block content
+	main.maincontent
+		img.company__logo(src="img/minsk-rental.png" alt="Company logo" title="Minsk budget rental cars")
+		include ../components/cars/cars

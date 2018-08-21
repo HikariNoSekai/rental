@@ -1,0 +1,24 @@
+.main-footer {
+	font-family: $fira;
+	color: #464646;
+	@add-mixin fontSize 20;
+	text-align: left;
+	padding-bottom: 25px;
+	padding-left: 65px;
+}
+
+.main-footer__descr{
+	margin-bottom: 12px;
+	margin-left: 20px;
+	max-width: 880px;
+}
+
+.main-footer__copyright--wrapper{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.main-footer__flag-img {
+	margin-left: 14px;
+}

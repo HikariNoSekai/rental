@@ -1,0 +1,78 @@
+.cars{
+	margin-top: 150px;
+	margin-bottom: 93px;
+	font-family: $oswald;
+	color: #fff;
+	text-transform: uppercase;
+	@add-mixin fontSize 44;
+	font-weight: 200;
+}
+
+.cars__car-card{
+	position: relative;
+	z-index: 999;
+	display: flex;
+	flex-flow: row nowrap;
+	max-width: 910px;
+	margin: 0 auto;
+	&:first-child{
+		top: 25px;
+	}
+}
+
+.card-card__details{
+	align-self: center;
+}
+
+/* details */
+
+.details__price{
+	margin-bottom: 16px;
+}
+
+.details__car-name{
+	margin-bottom: 26px;
+}
+
+.details__list{
+	display: flex;
+	margin-bottom: 32px;
+}
+
+.details__item{
+	position: relative;
+	padding: 8px 10px;
+	border-radius: 50%;
+	border: 2px solid #ebebeb;
+	size: 51px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25px;
+	&:first-child{
+		margin-left: 0;
+	}
+}
+
+.details__status{
+	position: absolute;
+	size: 23px;
+	border-radius: 50%;
+	background-color: #ebebeb;
+	font-family: $oswald;
+	@add-mixin fontSize 18;
+	color: #49a656;
+	top: -7px;
+	right: -11px;
+	text-align: center;
+	will-change: top, right;
+}
+
+.details__link{
+	color: #fff;
+	background-color: var(--accent-color);
+	padding: 15px 25px;
+	text-align: center;
+	border-radius: 11px;
+	max-width: 233px;
+}

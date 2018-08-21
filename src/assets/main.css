@@ -1,0 +1,29 @@
+@import "fonts.css";
+@import "_mixin.css";
+@import "libs.css";
+@import "adjustment.css";
+
+/*
+    Components
+*/
+
+@import "../components/header/header.css";
+@import "../components/cars/cars.css";
+@import "../components/footer/footer.css";
+
+
+/*
+    Pages
+*/
+
+.maincontent{
+	position: relative;
+	background: url('../img/flag-bg.svg') center center no-repeat fixed;
+}
+
+.company__logo{
+	position: absolute;
+	top: 66px;
+	left: 91px;
+	z-index: 1;
+}

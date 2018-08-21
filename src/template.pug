@@ -1,0 +1,22 @@
+doctype html
+html(lang='ru-RU')
+	block link
+		-var selected = 'Home'
+	head
+		meta(charset='UTF-8')
+		title
+			block title
+		meta(name='author' content)
+		meta(name='description' content)
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel='shortcut icon' type='images/x-icon' href='img/flag.ico')
+		link(rel='stylesheet' href='style/main.min.css')
+	body
+		include components/header/header.pug
+		block content
+		include components/footer/footer.pug
+		script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js')
+		script(src='https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.1/dist/jquery.formstyler.min.js')
+		script(src='js/main.min.js')
