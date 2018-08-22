@@ -20,6 +20,8 @@ html, body {
   margin: 0;
   padding: 0;
   background: var(--body-color);
+  background: linear-gradient(to bottom, #fff 0%, #e2e2e2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=0 );
 }
 
 .maincontent {
