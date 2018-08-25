@@ -1,11 +1,15 @@
 -
 	var carsArr = [
-		{img: 'img/cars/car1.png', price: '€40.00', name: 'Skoda Rapid `18'}
+		{img: 'img/cars/car1.png', price: '€40.00', name: 'Skoda Rapid `18'},
+		{img: 'img/cars/car1.png', price: '€40.00', name: 'hyundai accent'}
 	];
 section.cars
 	each car in carsArr
 		.cars__car-card
-			img.car-card__img(src=car.img alt=car.name title=car.name)
+			picture.car-card__img
+				source(media="(min-width: 650px)" srcset="")
+				source(media="(min-width: 465px)" srcset="")
+				img(src=car.img alt=car.name title=car.name)
 			.card-card__details
 				p.details__price= car.price
 				p.details__car-name= car.name

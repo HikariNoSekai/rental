@@ -14,14 +14,20 @@
 	display: flex;
 	flex-flow: row nowrap;
 	max-width: 910px;
+	height: 100vh;
 	margin: 0 auto;
 	&:first-child{
-		top: 25px;
+		/* top: 25px; */
 	}
 }
 
+.car-card__img{
+	size: 627px 447px;
+}
+
 .card-card__details{
-	align-self: center;
+	position: relative;
+	top: 10%;
 }
 
 /* details */

@@ -22,8 +22,9 @@
 }
 
 .company__logo{
-	position: absolute;
+	position: fixed;
 	top: 66px;
 	left: 91px;
 	z-index: 1;
+	size: 424px 127px;
 }
