@@ -17,17 +17,24 @@
 	height: 100vh;
 	margin: 0 auto;
 	&:first-child{
-		/* top: 25px; */
+		top: 25px;
 	}
 }
 
 .car-card__img{
-	size: 627px 447px;
+	size: 625px 440px;
 }
 
 .card-card__details{
 	position: relative;
 	top: 10%;
+	margin-left: 40px;
+}
+
+.cars__car-card{
+	&:nth-child(2) .card-card__details{
+		top: 0;
+	}
 }
 
 /* details */

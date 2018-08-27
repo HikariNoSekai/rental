@@ -1,18 +1,19 @@
 -
 	var carsArr = [
 		{img: 'img/cars/car1.png', price: '€40.00', name: 'Skoda Rapid `18'},
-		{img: 'img/cars/accent_850_2x.png', price: '€40.00', name: 'hyundai accent', srcx1: 'img/cars/accent_425_1x.png', srcx2: 'img/cars/accent_850_2x.png'}
+		{img: 'img/cars/accent_850_2x.png', price: '€40.00', name: 'hyundai accent', srcx1: 'img/cars/accent_425_1x.png', srcx2: 'img/cars/accent_850_2x.png', srcx3: 'img/cars/accent_630_1.5x.png'}
 	];
 section.cars
 	each car in carsArr
 		.cars__car-card
-			picture.car-card__img
-				if (car.srcx1 && car.srcx2)
-					source(media="(min-width: 650px)" srcset=car.srcx2)
+			picture
+				if (car.srcx1 && car.srcx2 && car.srcx3)
+					source(media="(min-width: 1200px)" srcset=car.srcx3)
+					source(media="(min-width: 700px)" srcset=car.srcx3)
 					source(media="(min-width: 465px)" srcset=car.srcx1)
-					img.car-card__img(src=car.img alt=car.name title=car.name)
+					img(src=car.srcx3 alt=car.name title=car.name)
 				else
-					img.car-card__img(src=car.img alt=car.name title=car.name)
+					img(src=car.img alt=car.name title=car.name)
 			.card-card__details
 				p.details__price= car.price
 				p.details__car-name= car.name
