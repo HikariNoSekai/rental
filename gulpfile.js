@@ -116,7 +116,7 @@ gulp.task('reload', function () {
     });
 });
 
-gulp.task('watch', ['reload', 'js', 'css', 'html', 'img', 'fonts'], function () {
+gulp.task('watch', ['reload', 'js', 'css', 'html', 'fonts'], function () {
     watch('src/**/*.pug', () => gulp.start('html'));
     watch('src/**/*.css', () => gulp.start('css'));
     watch('src/**/*.js', () => gulp.start('js'));

@@ -1,5 +1,5 @@
 .cars{
-	margin-top: 150px;
+	margin-top: 122px;
 	margin-bottom: 93px;
 	font-family: $oswald;
 	color: #fff;
@@ -13,28 +13,18 @@
 	z-index: 999;
 	display: flex;
 	flex-flow: row nowrap;
-	max-width: 910px;
+	max-width: 910px; /* 1235 for retina if img width 850px */
 	height: 100vh;
 	margin: 0 auto;
-	&:first-child{
-		top: 25px;
-	}
 }
 
 .car-card__img{
-	size: 625px 440px;
+	position: relative;
+	top: 12%;
 }
 
 .card-card__details{
-	position: relative;
-	top: 10%;
-	margin-left: 40px;
-}
-
-.cars__car-card{
-	&:nth-child(2) .card-card__details{
-		top: 0;
-	}
+	margin-left: 105px;
 }
 
 /* details */
@@ -84,7 +74,7 @@
 .details__link{
 	color: #fff;
 	background-color: var(--accent-color);
-	padding: 15px 25px;
+	padding: 11px 25px;
 	text-align: center;
 	border-radius: 11px;
 	max-width: 233px;

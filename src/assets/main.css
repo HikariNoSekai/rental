@@ -18,7 +18,7 @@
 
 .maincontent{
 	position: relative;
-	background: url('../img/flag-bg.svg') center center no-repeat fixed;
+	background: url('../img/flag-bg.svg') no-repeat fixed;
 }
 
 .company__logo{
