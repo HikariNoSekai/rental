@@ -1,19 +1,14 @@
 -
 	var carsArr = [
-		{img: 'img/cars/basis/car1.png', price: '€40.00', name: 'Skoda Rapid `18', srcx3:'img/cars/car1.png'},
-		{img: 'img/cars/basis/car2.png', price: '€40.00', name: 'hyundai accent', srcx1: 'img/cars/accent_425_1x.png', srcx2: 'img/cars/accent_850_2x.png', srcx3: 'img/cars/accent_630_1.5x.png'}
+		{img: 'img/cars/car1.png', price: '€40.00', name: 'Skoda Rapid `18', srcx1:'img/cars/retina/car_skoda.png'},
+		{img: 'img/cars/car2.png', price: '€40.00', name: 'hyundai accent', srcx1: 'img/cars/retina/car_accent.png'}
 	];
 section.cars
 	each car in carsArr
 		.cars__car-card
 			picture
-				//- if (car.srcx1 !! car.srcx2 !! car.srcx3)
-				if (car.srcx2)
-					source(media="(min-width: 1921px)" srcset=car.srcx2)
-				if (car.srcx3)
-					source(media="(min-width: 1441px)" srcset=car.srcx3)
 				if (car.srcx1)
-					source(media="(min-width: 465px)" srcset=car.srcx1)
+					source(media="(min-width: 1921px)" srcset=car.srcx1)
 				img.car-card__img(src=car.img alt=car.name title=car.name)
 				//- else
 				//- 	img.car-card__img(src=car.img alt=car.name title=car.name)
@@ -28,5 +23,28 @@ section.cars
 					li.details__item
 						img.details__img(src="img/details-icons/gasoline.png")
 						p.details__status 2
-				a.details__link(href="#") book now
+				//- a.details__link(href="#") book now
+				adress.details__contact-us
+					a.contact-us__call-link(href="tel:+375293231616")
+						svg.contact-us__call-btn(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 54")
+							title Call to us
+							g(id="Layer_2" data-name="Layer 2")
+								g(id="Слой_1" data-name="Слой 1")
+									rect(class="cls-1" width="150" height="54" rx="26.77" ry="26.77")
+									path(class="cls-2" d="M27.64,43.27A16.3,16.3,0,1,1,43.94,27,16.32,16.32,0,0,1,27.64,43.27Zm0-30.1A13.8,13.8,0,1,0,41.44,27,13.82,13.82,0,0,0,27.64,13.17Z")
+									path(class="cls-2" d="M31.94,35A4.57,4.57,0,0,0,34,34.19c.51-.41,1.51-1.23,1.61-1.9s-.86-1.5-1.35-2-1.4-1.77-2.25-1.84-1.47.91-2,1.41c-.85.84-1.35.29-2.16-.37a20.17,20.17,0,0,1-2.08-1.95c-.45-.5-1.61-1.52-1.63-2.22s1.19-1.4,1.6-2c.63-.86.1-1.45-.54-2.11a15.65,15.65,0,0,0-2.14-2.09c-.92-.63-1.56.18-2.19.8-2.66,2.62-.19,6.66,1.68,9.07a17.1,17.1,0,0,0,3.8,3.55A12.69,12.69,0,0,0,31.94,35Z")
+									text(class="cls-3" transform="translate(60 39)")
+										tspan(class="cls-4") CALL
+										//- tspan(x="20.82" y="0") 
+					a.contact-us__text-link(href="whatsapp://send?phone=375293231616")
+						svg.contact-us__text-btn(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 54")
+							title Message to us
+							g(id="Layer_2" data-name="Layer 2")
+								g(id="Слой_1" data-name="Слой 1")
+									rect(class="cls-11" width="150" height="54" rx="26.77" ry="26.77")
+									text(class="cls-21" transform="translate(60 39)") TEXT
+										//- tspan(class="cls-31" x="35.26" y="0") X
+										//- tspan(x="55.9" y="0") T
+									g(id="WA_Logo" data-name="WA Logo")
+										path(class="cls-41" d="M41.78,21.14A11.16,11.16,0,0,0,41,19.22,15,15,0,1,0,14.65,33.51l-2.12,7.75,7.93-2.08A14.93,14.93,0,0,0,27.61,41h0A15,15,0,0,0,41.78,21.14Zm-2.46,9.72A12.26,12.26,0,0,1,27.61,39h0a12.44,12.44,0,0,1-6.33-1.73L20.83,37l-4.71,1.23,1.26-4.59-.3-.47a12.44,12.44,0,1,1,22.24-2.31Zm-4.89-1.44c-.37-.18-2.21-1.09-2.55-1.21s-.6-.19-.84.18-1,1.22-1.19,1.47-.43.28-.81.09a10,10,0,0,1-3-1.85A11.43,11.43,0,0,1,24,25.51c-.22-.38,0-.58.16-.76s.38-.44.56-.66a2.65,2.65,0,0,0,.38-.62.72.72,0,0,0,0-.66c-.1-.18-.85-2-1.16-2.77s-.61-.63-.84-.64l-.71,0a1.39,1.39,0,0,0-1,.47A4.22,4.22,0,0,0,20,23a7.26,7.26,0,0,0,1.53,3.87,16.66,16.66,0,0,0,6.38,5.64c.89.38,1.59.61,2.13.79a5.14,5.14,0,0,0,2.36.14,3.83,3.83,0,0,0,2.52-1.77,3.19,3.19,0,0,0,.22-1.78C35.05,29.7,34.8,29.61,34.43,29.42Z")
 

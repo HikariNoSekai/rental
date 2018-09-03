@@ -14,8 +14,8 @@
 	display: flex;
 	flex-flow: row nowrap;
 	max-width: 910px; /* 1235 for retina if img width 850px */
-	height: 100vh;
-	margin: 0 auto;
+	/* height: 100vh; */
+	margin: 0 auto 200px auto;
 }
 
 .car-card__img{
@@ -71,11 +71,71 @@
 	will-change: top, right;
 }
 
-.details__link{
+/* .details__link{
 	color: #fff;
 	background-color: var(--accent-color);
 	padding: 11px 25px;
 	text-align: center;
 	border-radius: 11px;
 	max-width: 233px;
+} */
+
+.details__contact-us {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+/* svg */
+
+.contact-us__call-btn, .contact-us__text-btn {
+	width: 131px;
+	height: 47px;
+}
+
+.contact-us__call-btn{
+	margin-right: 28px;
+}
+
+/* call */
+.cls-1 {
+	fill: #00acec;
+}
+
+.cls-2,
+.cls-3 {
+	fill: #fff;
+}
+
+.cls-3 {
+	@add-mixin fontSize 32;
+	font-family: $oswald;
+	font-weight: 300;
+}
+
+.cls-4 {
+	letter-spacing: 0em;
+}
+
+/* text */
+.cls-11 {
+	fill: #51924b;
+}
+
+.cls-21 {
+	@add-mixin fontSize 32;
+	font-family: $oswald;
+	font-weight: 300;
+}
+
+.cls-21,
+.cls-41 {
+	fill: #fff;
+}
+
+.cls-31 {
+	letter-spacing: 0.01em;
+}
+
+.cls-4 {
+	fill-rule: evenodd;
 }
