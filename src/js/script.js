@@ -6,7 +6,7 @@ function ChangeSizes() {
     this.backGround = d.querySelector(".background__img");
 
     this.changeSize_ = () => {
-        let backgroundHeight = window.outerWidth / (1366 * 427);
+        let backgroundHeight = window.outerWidth / 1366 * 427;
         let lastCarMarginBottom = window.outerHeight - backgroundHeight;
         this.lastCarCard.style.marginBottom = `${lastCarMarginBottom}px`;
     }
