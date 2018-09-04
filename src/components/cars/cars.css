@@ -1,11 +1,23 @@
 .cars{
-	margin-top: 122px;
+	/* margin-top: 122px; */
 	margin-bottom: 93px;
 	font-family: $oswald;
 	color: #fff;
 	text-transform: uppercase;
 	@add-mixin fontSize 44;
 	font-weight: 200;
+}
+
+
+.cars__car-card--bg {
+	position: relative;
+}
+
+.car-card__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
 
 .cars__car-card{
@@ -16,14 +28,19 @@
 	max-width: 910px; /* 1235 for retina if img width 850px */
 	/* height: 100vh; */
 	margin: 0 auto 200px auto;
+	transform: translateY(35%);
+	will-change: transform;
 }
 
 .car-card__img{
 	position: relative;
+	z-index: 999;
 	top: 12%;
 }
 
 .card-card__details{
+	position: relative;
+	z-index: 999;
 	margin-left: 105px;
 }
 
@@ -37,9 +54,16 @@
 	margin-bottom: 26px;
 }
 
+
 .details__list{
 	display: flex;
 	margin-bottom: 32px;
+}
+
+.details__price,
+.details__car-name {
+	transform: skew(-10deg) rotate(-10.5deg);
+	will-change: transform;
 }
 
 .details__item{
@@ -97,45 +121,11 @@
 }
 
 /* call */
-.cls-1 {
-	fill: #00acec;
-}
-
-.cls-2,
-.cls-3 {
-	fill: #fff;
-}
-
-.cls-3 {
-	@add-mixin fontSize 32;
-	font-family: $oswald;
-	font-weight: 300;
-}
-
-.cls-4 {
-	letter-spacing: 0em;
+.st1{
+	fill:#fff
 }
 
 /* text */
-.cls-11 {
-	fill: #51924b;
-}
-
-.cls-21 {
-	@add-mixin fontSize 32;
-	font-family: $oswald;
-	font-weight: 300;
-}
-
-.cls-21,
-.cls-41 {
-	fill: #fff;
-}
-
-.cls-31 {
-	letter-spacing: 0.01em;
-}
-
-.cls-4 {
-	fill-rule: evenodd;
+.st2{
+	fill:#fff
 }

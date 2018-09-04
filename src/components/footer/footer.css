@@ -1,5 +1,5 @@
 .main-footer {
-	position: fixed;
+	/* position: fixed; */
 	z-index: 10;
 	bottom: 25px;
 	left: 65px;
@@ -7,8 +7,8 @@
 	color: #464646;
 	@add-mixin fontSize 20;
 	text-align: left;
-	/* padding-bottom: 25px;
-	padding-left: 65px; */
+	padding-bottom: 25px;
+	padding-left: 65px;
 }
 
 .main-footer__descr{

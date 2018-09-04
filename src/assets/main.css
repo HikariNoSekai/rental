@@ -20,15 +20,15 @@
 	position: relative;
 }
 
-.background__img{
+/* .background__img{
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1;
-}
+} */
 
 .company__logo{
-	position: fixed;
+	position: absolute;
 	top: 30px;
 	left: 91px;
 	z-index: 10;
