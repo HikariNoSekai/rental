@@ -1,7 +1,7 @@
 -
 	var carsArr = [
 		{img: 'img/cars/car1.png', price: '€40.00', name: 'Skoda Rapid `18', srcx1:'img/cars/retina/car_skoda.png', id: 'skoda'},
-		{img: 'img/cars/car2.png', price: '€40.00', name: 'hyundai accent', srcx1: 'img/cars/retina/car_accent.png', id: 'hyundai'}
+		{img: 'img/cars/car2.png', price: '€40.00', name: 'hyundai accent `18', srcx1: 'img/cars/retina/car_accent.png', id: 'hyundai'}
 	];
 
 section.cars
@@ -20,20 +20,19 @@ section.cars
 					if (car.srcx1)
 						source(media="(min-width: 1921px)" srcset=car.srcx1)
 					img.car-card__img(src=car.img alt=car.name title=car.name)
-					//- else
-					//- 	img.car-card__img(src=car.img alt=car.name title=car.name)
 				.card-card__details
-					p.details__price= car.price
+					.details__price--wrapper
+						span.details__price= car.price
+						ul.details__list
+							li.details__item
+								img.details__img.details__img--snow(src="img/details-icons/snowflake.png")
+							li.details__item
+								img.details__img.details__img--term(src="img/details-icons/thermometr.png")
+							li.details__item
+								img.details__img.details__img--gas(src="img/details-icons/gasoline.png")
+								p.details__status 2
 					p.details__car-name= car.name
-					ul.details__list
-						li.details__item
-							img.details__img(src="img/details-icons/snowflake.png")
-						li.details__item
-							img.details__img(src="img/details-icons/thermometr.png")
-						li.details__item
-							img.details__img(src="img/details-icons/gasoline.png")
-							p.details__status 2
-					//- a.details__link(href="#") book now
+					p.details__book-now book now
 					adress.details__contact-us
 						a.contact-us__call-link(href="tel:+375293231616")
 							svg.contact-us__call-btn(id="Слой_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.4 54")
