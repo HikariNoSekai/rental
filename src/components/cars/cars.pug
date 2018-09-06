@@ -31,7 +31,7 @@ section.cars
 							li.details__item
 								img.details__img.details__img--gas(src="img/details-icons/gasoline.png")
 								p.details__status 2
-					p.details__car-name= car.name
+					p.details__car-name(class=`details__car-name--${car.id}`)= car.name
 					p.details__book-now book now
 					adress.details__contact-us
 						a.contact-us__call-link(href="tel:+375293231616")

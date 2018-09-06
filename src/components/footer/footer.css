@@ -12,6 +12,7 @@
 }
 
 .main-footer__descr{
+	font-weight: 300;
 	margin-bottom: 12px;
 	margin-left: 20px;
 	max-width: 880px;
@@ -21,6 +22,10 @@
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+}
+
+.main-footer__copyright{
+	font-weight: 300;
 }
 
 .main-footer__flag-img {

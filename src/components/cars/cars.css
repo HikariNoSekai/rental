@@ -5,7 +5,6 @@
 	color: #fff;
 	text-transform: uppercase;
 	@add-mixin fontSize 44;
-	font-weight: 200;
 }
 
 
@@ -48,30 +47,26 @@
 
 .details__price--wrapper{
 	display: flex;
-	/* margin-bottom: 16px; */
-	/* align-items: center; */
 }
 
 .details__price{
+	font-weight: 200;
 	margin-top: 18px;
 }
 
 .details__car-name{
-	margin-bottom: 18px;
+	font-weight: 200;
+	margin-bottom: 60px;
+	&--skoda{
+		margin-bottom: 90px;
+	}
 }
 
 
 .details__list{
-	/* position: absolute; */
 	position: relative;
-	/* top: -12px; */
 	left: 70px;
 	display: flex;
-	/* margin-top: -56px; */
-	/* margin-left: 70px; */
-	/* transform: rotate(-7deg); */
-	/* will-change: transform; */
-	/* margin-bottom: 32px; */
 }
 
 .details__price,
@@ -92,7 +87,7 @@
 		margin-left: 6px;
 	}
 	&:nth-child(2){
-		top: -7px;
+		top: -9px;
 	}
 	&:nth-child(3){
 		top: -17px;
@@ -118,6 +113,7 @@
 	background-color: #ebebeb;
 	font-family: $oswald;
 	@add-mixin fontSize 18;
+	font-weight: 300;
 	color: #49a656;
 	top: -7px;
 	right: -11px;
@@ -126,15 +122,16 @@
 }
 
 .details__book-now {
+	font-weight: 200;
 	text-align: center;
+	color: #49a656;
 	margin-bottom: 35px; /* 31px original */
-	transform: skew(-10deg) rotate(-10.5deg);
-	will-change: transform;
 }
 
 .details__contact-us {
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: center;
 }
 
 /* svg */
