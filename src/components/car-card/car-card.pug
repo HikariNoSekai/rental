@@ -5,7 +5,9 @@ mixin carCard(car)
             img.car-card__car-color(src=car.color)
             .car-card
                 .car-card__img--wrapper
-                    img.car-card__img(src=car.img title=car.title alt=car.title)
+                    picture
+                        source(srcset=car.img media="(min-width >= 1200px)")
+                        img.car-card__img(src=car.mobile title=car.title alt=car.title)
                 .car-card__details--wrapper
                     img.details__car-name(src="./img/cars/skoda-name.svg")
                     ul.details__list
@@ -21,7 +23,9 @@ mixin carCard(car)
             img.car-card__car-color.img.car-card__car-color--reverse(src=car.color)
             .car-card.car-card--reverse
                 .car-card__img--wrapper.car-card__img--reverse
-                    img.car-card__img(title=car.title alt=car.title src=car.img)
+                    picture
+                        source(srcset=car.img media="(min-width >= 1200px)")
+                        img.car-card__img(src=car.mobile title=car.title alt=car.title)
                 .car-card__details--wrapper.car-card__details--reverse
                     img.details__car-name.details__car-name--reverse(src="./img/cars/skoda-name.svg")
                     ul.details__list.details__list--reverse

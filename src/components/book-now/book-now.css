@@ -1,25 +1,39 @@
 .book-now--wrapper{
     background: url("../img/book-now/bg.svg") no-repeat;
-    size: 704px 394px;
-    /* margin: 0 auto; */
-    /* @add-mixin center; */
-    /* flex-flow: column nowrap; */
+    size: 100% 394px;
     position: absolute;
     @add-mixin poscenter;
     z-index: 9999;
+    @media(width >= 640px){
+        size: 640px 394px;
+    }
+    @media(--large){
+        size: 704px 394px;
+    }
 }
 
 .book-now{
     position: absolute;
-    top: 52%;
-    left: 54%;
+    top: 46%;
+    left: 51%;
     transform: translate(-50%,-50%);
+    @media(--large){
+        top: 52%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .book-now__title{
     size: 250px 98px;
     position: relative;
     left: 20px;
+    @media(--small){
+        left: 90px;
+    }
+    @media(--tablet){
+        left: 20px;
+    }
 }
 
 .book-now__contact-us{
@@ -29,6 +43,12 @@
 .contact-us__text-link, .contact-us__call-link{
     size: 135px 75px;
     position: relative;
+    @media(--small){
+        size: 214px 118px;
+    }
+    @media(--tablet){
+        size: 135px 75px;
+    }
 }
 
 .contact-us__call-link{
@@ -38,6 +58,12 @@
 .contact-us__text-link{
     margin-left: 21px;
     top: -40px;
+    @media(--small){
+        top: -55px;
+    }
+    @media(--tablet){
+        top: -40px;
+    }
 }
 
 /* buttons */

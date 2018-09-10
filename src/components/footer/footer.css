@@ -6,21 +6,32 @@
 	color: #464646;
 	@add-mixin fontSize 20;
 	text-align: left;
-	padding-bottom: 52px; /* 25px */
-	padding-left: 67px; /* 65px */
+	padding-bottom: 54px;
+	padding-left: 36px;
+	@media(--tablet){
+		padding-bottom: 52px;
+		padding-left: 67px;
+	}
 }
 
 .main-footer__descr{
 	font-weight: 300;
-	margin-bottom: 12px;
+	margin-bottom: 81px;
 	margin-left: 20px;
 	max-width: 880px;
+	@media(--tablet){
+		margin-bottom: 12px;
+	}
 }
 
 .main-footer__copyright--wrapper{
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+	justify-content: center;
+	@media(--tablet){
+		justify-content: flex-start;
+	}
 }
 
 .main-footer__copyright{

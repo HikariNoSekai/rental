@@ -29,8 +29,20 @@ body{
 
 .company__logo{
 	position: absolute;
-	top: 66px; /* 30 */
-	left: 200px; /* 91 */
+	top: 0;
+	left: 64px;
 	z-index: 10;
-	size: 455px 135px;
+	size: 300px 135px;
+	@media(--small){
+		top: 20px;
+		size: 455px 135px;
+	}
+	@media(--medlg){
+		top: 65px;
+		left: 64px;
+	}
+	@media(--large){
+		top: 66px;
+		left: 200px;
+	}
 }

@@ -7,6 +7,7 @@
 		<meta name="author" content>
 		<meta name="description" content>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="images/x-icon" href="img/flag.ico">
 		<link rel="stylesheet" href="style/main.min.css">
 	</head>
@@ -20,7 +21,11 @@
 			<section class="cars">
 								<div class="car-card--wrapper"><img class="car-card__img-bg" src="img/flag1.svg"><img class="car-card__car-color" src="img/cars/white.svg">
 									<div class="car-card">
-										<div class="car-card__img--wrapper"><img class="car-card__img" src="img/cars/skoda-rapid.png" title="Skoda Rapid `18" alt="Skoda Rapid `18"></div>
+										<div class="car-card__img--wrapper">
+											<picture>
+												<source srcset="img/cars/skoda-rapid.png" media="(min-width &gt;= 1200px)"><img class="car-card__img" src="img/cars/mobile/skoda-rapid.png" title="Skoda Rapid `18" alt="Skoda Rapid `18">
+											</picture>
+										</div>
 										<div class="car-card__details--wrapper"><img class="details__car-name" src="./img/cars/skoda-name.svg">
 											<ul class="details__list">
 												<li class="details__item"><img class="details__img details__img--snow" src="img/details-icons/snowflake.png" title="air condition" alt="air condition"></li>
@@ -58,7 +63,11 @@
 				</div>
 								<div class="car-card--wrapper"><img class="car-card__img-bg" src="img/flag2.svg"><img class="car-card__car-color img car-card__car-color--reverse" src="img/cars/champagne.svg">
 									<div class="car-card car-card--reverse">
-										<div class="car-card__img--wrapper car-card__img--reverse"><img class="car-card__img" title="Skoda Rapid `18" alt="Skoda Rapid `18" src="img/cars/skoda-champagne.png"></div>
+										<div class="car-card__img--wrapper car-card__img--reverse">
+											<picture>
+												<source srcset="img/cars/skoda-champagne.png" media="(min-width &gt;= 1200px)"><img class="car-card__img" src="img/cars/mobile/skoda-champagne.png" title="Skoda Rapid `18" alt="Skoda Rapid `18">
+											</picture>
+										</div>
 										<div class="car-card__details--wrapper car-card__details--reverse"><img class="details__car-name details__car-name--reverse" src="./img/cars/skoda-name.svg">
 											<ul class="details__list details__list--reverse">
 												<li class="details__item"><img class="details__img details__img--snow" src="img/details-icons/snowflake.png" title="air condition" alt="air condition"></li>

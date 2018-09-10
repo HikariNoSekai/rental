@@ -4,9 +4,11 @@
 
 @custom-media --small (width >= 601px);
 @custom-media --medium (width >= 768px);
-@custom-media --medlg (width >= 1081px);
+@custom-media --tablet (width >= 805px);
+@custom-media --medlg (width >= 1024px);
 @custom-media --large (width >= 1200px);
-@custom-media --exlarge (width >= 1444px);
+/* @custom-media --desktop(width >= 1350px); */
+@custom-media --exlarge (width >= 1440px);
 
 
 @define-mixin fontSize $count {
