@@ -1,0 +1,36 @@
+mixin carCard(car)
+    .car-card--wrapper
+        if !car.reverse
+            img.car-card__img-bg(src=car.bg)
+            img.car-card__car-color(src=car.color)
+            .car-card
+                .car-card__img--wrapper
+                    img.car-card__img(src=car.img title=car.title alt=car.title)
+                .car-card__details--wrapper
+                    img.details__car-name(src="./img/cars/skoda-name.svg")
+                    ul.details__list
+                        li.details__item
+                            img.details__img.details__img--snow(src="img/details-icons/snowflake.png" title="air condition" alt="air condition")
+                        li.details__item
+                            img.details__img.details__img--term(src="img/details-icons/thermometr.png" title="automatic transmission" alt="automatic transmission")
+                        li.details__item
+                            img.details__img.details__img--gas(src="img/details-icons/gasoline.png" title="space for 2 suitcases" alt="space for 2 suitcases")
+                            p.details__status 2
+        else
+            img.car-card__img-bg(src=car.bg)
+            img.car-card__car-color.img.car-card__car-color--reverse(src=car.color)
+            .car-card.car-card--reverse
+                .car-card__img--wrapper.car-card__img--reverse
+                    img.car-card__img(title=car.title alt=car.title src=car.img)
+                .car-card__details--wrapper.car-card__details--reverse
+                    img.details__car-name.details__car-name--reverse(src="./img/cars/skoda-name.svg")
+                    ul.details__list.details__list--reverse
+                        li.details__item
+                            img.details__img.details__img--snow(src="img/details-icons/snowflake.png" title="air condition" alt="air condition")
+                        li.details__item
+                            img.details__img.details__img--term(src="img/details-icons/thermometr.png" title="automatic transmission" alt="automatic transmission")
+                        li.details__item
+                            img.details__img.details__img--gas(src="img/details-icons/gasoline.png" title="space for 2 suitcases" alt="space for 2 suitcases")
+                            p.details__status 2
+
+

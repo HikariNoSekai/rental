@@ -1,0 +1,64 @@
+.book-now--wrapper{
+    background: url("../img/book-now/bg.svg") no-repeat;
+    size: 704px 394px;
+    margin: 0 auto;
+    position: relative;
+    @add-mixin center;
+    flex-flow: column nowrap;
+    position: absolute;
+    @add-mixin poscenter;
+    z-index: 9999;
+}
+
+.book-now{
+    position: absolute;
+    top: 52%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+}
+
+.book-now__title{
+    size: 250px 98px;
+    position: relative;
+    left: 20px;
+}
+
+.book-now__contact-us{
+    display: flex;
+}
+
+.contact-us__text-link, .contact-us__call-link{
+    size: 135px 75px;
+    position: relative;
+}
+
+.contact-us__call-link{
+    top: -10px;
+}
+
+.contact-us__text-link{
+    margin-left: 21px;
+    top: -40px;
+}
+
+/* buttons */
+
+.st0 {
+    fill: #64A35D;
+}
+
+.st1 {
+    fill: #FFFFFF;
+}
+
+.cls-1 {
+    fill: #64A35D;
+}
+
+.cls-2, .cls-3 {
+    fill: #fff;
+}
+
+.cls-3{
+    fill-rule: evenodd;
+}
