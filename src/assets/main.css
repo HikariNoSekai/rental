@@ -18,6 +18,11 @@
     Pages
 */
 
+body{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 .maincontent{
 	position: relative;
 }
