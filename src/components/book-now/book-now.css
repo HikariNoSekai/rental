@@ -87,6 +87,8 @@
 }
 
 .book-now__tel{
+    font-family: $oswald;
+    font-weight: 200;
     color: var(--accent-color);
     text-transform: uppercase;
     transform: skew(-7deg) rotate(-10deg);
