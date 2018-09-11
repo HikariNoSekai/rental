@@ -3,7 +3,7 @@
     size: 0;
     position: absolute;
     @add-mixin poscenter;
-    z-index: 9999;
+    z-index: 999;
     @media(width >= 551px){
         size: 100% 394px;
     }
