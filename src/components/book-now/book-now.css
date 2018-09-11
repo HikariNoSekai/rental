@@ -5,9 +5,12 @@
     @add-mixin poscenter;
     z-index: 999;
     @media(width >= 551px){
-        size: 100% 394px;
+        size: 100% 330px; /* height 395px */
     }
     @media(width >= 640px){
+        size: 640px 375px;
+    }
+    @media(--tablet){
         size: 640px 394px;
     }
     @media(--large){
@@ -80,6 +83,20 @@
     }
     @media(--tablet){
         top: -40px;
+    }
+}
+
+.book-now__tel{
+    color: var(--accent-color);
+    text-transform: uppercase;
+    transform: skew(-7deg) rotate(-10deg);
+    @add-mixin fontSize 12;
+    text-align: center;
+    @media(width >= 551px){
+        @add-mixin fontSize 16;
+    }
+    @media(--tablet){
+        @add-mixin fontSize 24;
     }
 }
 
