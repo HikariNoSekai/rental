@@ -91,7 +91,7 @@
     font-weight: 200;
     color: var(--accent-color);
     text-transform: uppercase;
-    transform: skew(-7deg) rotate(-10deg);
+    transform: skew(-11deg) rotate(-10deg);
     @add-mixin fontSize 12;
     text-align: center;
     @media(width >= 551px){

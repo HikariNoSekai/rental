@@ -7,9 +7,18 @@
 	@add-mixin fontSize 16;
 	text-align: left;
 	padding-bottom: 54px;
-	padding-left: 36px;
+	padding-left: 18px;
+	padding-right: 18px;
 	@media(width >= 551px){
 		@add-mixin fontSize 20;
+		padding-bottom: 54px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	@media(width >= 881px){
+		padding-bottom: 54px;
+		padding-left: 36px;
+		padding-right: 0;
 	}
 	@media(--tablet){
 		padding-bottom: 52px;
