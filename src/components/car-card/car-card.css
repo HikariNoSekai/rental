@@ -1,11 +1,14 @@
 .car-card--wrapper{
     position: relative;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     &:first-child{
         margin-top: 69px;
     }
     &:last-child{
         margin-bottom: 0;
+    }
+    @media(width >= 551px){
+        margin-bottom: 300px;
     }
     @media(--small){
         margin-bottom: 411px;
@@ -24,9 +27,14 @@
 
 .car-card__car-color{
     position: absolute;
-    size: 50px 25px;
-    top: 68%;
+    size: 25px 15px;
+    top: 70%;
     left: 49%;
+    @media(width >= 551px){
+        size: 50px 25px;
+        top: 68%;
+        left: 49%;
+    }
     @media(--small){
         size: 55px 30px;
         top: 68%;
@@ -54,9 +62,13 @@
     display: flex;
     flex-flow: row nowrap;
     max-width: 910px;
-    left: 43%;
-    top: 79%;
+    left: 45%;
+    top: 74%;
     transform: translate(-50%, -50%);
+    @media(width >= 551px){
+        left: 43%;
+        top: 79%;
+    }
     @media(--small){
         left: 43%;
         top: 80%;
@@ -70,7 +82,10 @@
 }
 
 .car-card__img{
-    size: 200px 130px;
+    size: 100px 65px;
+    @media(width >= 551px){
+        size: 200px 130px;
+    }
     @media(width >= 585px){
         size: 240px 164px;
     }
@@ -82,7 +97,10 @@
 /* details */
 
 .details__car-name{
-    size: 210px 50px;
+    size: 150px 30px;
+    @media(width >= 551px){
+        size: 210px 50px;
+    }
     @media(--small){
         size: 214px 68px;
     }
@@ -93,29 +111,47 @@
 
 .details__list {
     position: absolute;
-    left: 82%;
-    top: -10px;
+    left: 75%;
+    top: -3px;
     display: flex;
+    @media(width >= 551px){
+        left: 82%;
+        top: -10px;
+    }
 }
 
 .details__item {
     position: relative;
     /* padding: 8px 10px; */
     border-radius: 50%;
-    border: 2px solid #ebebeb;
+    border: 1px solid #ebebeb;
     @add-mixin center;
-    size: 24px;
-    margin-left: 11px;
+    size: 12px;
+    margin-left: 9px;
     &:first-child {
         margin-left: 0;
     }
 
     &:nth-child(2) {
-        top: -9px;
+        top: -7px;
     }
 
     &:nth-child(3) {
-        top: -17px;
+        top: -12px;
+    }
+    @media(width >= 551px){
+        border: 2px solid #ebebeb;
+        margin-left: 11px;
+        size: 24px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:nth-child(2) {
+            top: -9px;
+        }
+        &:nth-child(3) {
+            top: -17px;
+        }
     }
     @media(width >=1200px) {
         size: 31px;
@@ -136,21 +172,30 @@
 }
 
 .details__img {
-    size: 16px;
+    size: 6px;
+    @media(width >= 551px){
+        size: 16px;
+    }
     @media(width >=1200px) {
         size: 26px;
     }
 }
 
 .details__img--term {
-    width: 9px;
+    width: 5px;
+    @media(width >= 551px){
+        width: 9px;
+    }
     @media(width >=1200px) {
         width: 14px;
     }
 }
 
 .details__img--gas {
-    width: 10px;
+    width: 6px;
+    @media(width >= 551px){
+        width: 10px;
+    }
     @media(width >=1200px) {
         width: 15px;
     }
@@ -158,17 +203,23 @@
 
 .details__status {
     position: absolute;
-    size: 10px;
+    size: 7px;
     border-radius: 50%;
     background-color: #ebebeb;
     font-family: $oswald;
-    @add-mixin fontSize 8;
+    @add-mixin fontSize 5;
     font-weight: 300;
     color: #49a656;
-    top: -4px;
-    right: -5px;
+    top: -3px;
+    right: -3px;
     text-align: center;
     will-change: top, right;
+    @media(width >= 551px){
+        size: 10px;
+        @add-mixin fontSize 8;
+        top: -4px;
+        right: -5px;
+    }
     @media(width >=1200px) {
         size: 23px;
         @add-mixin fontSize 18;
@@ -179,9 +230,14 @@
 
 /* reverse */
 .car-card__car-color--reverse{
-    size: 111px 25px;
-    top: 60%;
-    left: 37%;
+    size: 40px 25px;
+    top: 55%;
+    left: 36%;
+    @media(width >= 551px){
+        size: 111px 25px;
+        top: 60%;
+        left: 37%;
+    }
     @media(--small){
         size: 111px 40px;
         top: 57%;
@@ -209,8 +265,12 @@
 }
 
 .car-card--reverse{
-    top: 50%;
-    left: 60%;
+    top: 44%;
+    left: 59%;
+    @media(width >= 551px){
+        top: 50%;
+        left: 60%;
+    }
     @media(--small){
         top: 50%;
         left: 60%;
@@ -244,6 +304,10 @@
 }
 
 .details__list--reverse{
-    left: 20%;
-    top: 35%;
+    left: 19%;
+    top: 39%;
+    @media(width >= 551px){
+        left: 20%;
+        top: 35%;
+    }
 }

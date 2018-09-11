@@ -32,7 +32,10 @@ body{
 	top: 0;
 	left: 64px;
 	z-index: 10;
-	size: 300px 135px;
+	size: 200px 135px;
+	@media(width >= 551px){
+		size: 300px 135px;
+	}
 	@media(--small){
 		top: 20px;
 		size: 455px 135px;
