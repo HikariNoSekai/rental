@@ -111,8 +111,8 @@
 
 .details__list {
     position: absolute;
-    left: 75%;
-    top: -3px;
+    left: 72%;
+    top: -5px;
     display: flex;
     @media(width >= 551px){
         left: 82%;
@@ -304,7 +304,7 @@
 }
 
 .details__list--reverse{
-    left: 19%;
+    left: 22%;
     top: 39%;
     @media(width >= 551px){
         left: 20%;
